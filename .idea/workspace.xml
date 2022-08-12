@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c75abb97-6630-44d2-bfab-38b161bd62fd" name="变更" comment="初始化菜单同时封装之前初始化界面的代码为函数">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="c75abb97-6630-44d2-bfab-38b161bd62fd" name="变更" comment="initImage()初始化图片设置位置方法">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/github/guiguli/GameJFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/guiguli/GameJFrame.java" afterDir="false" />
     </list>
@@ -95,7 +94,7 @@
       <option name="presentableId" value="Default" />
       <updated>1660295331419</updated>
       <workItem from="1660295333175" duration="8908000" />
-      <workItem from="1660308333559" duration="658000" />
+      <workItem from="1660308333559" duration="2381000" />
     </task>
     <task id="LOCAL-00001" summary="创建基本架构&#10;GameJFrame 设置主界面&#10;LoginJframe 设置登录界面&#10;RegisterJFrame 设置注册界面&#10;他们全都继承自JFrame类，设置基本属性:宽高、标题、居中、置顶、关闭模式、显示界面&#10;App写main用于调用他们">
       <created>1660298911335</created>
@@ -111,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660306304194</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="initImage()初始化图片设置位置方法">
+      <created>1660309028771</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1660309028771</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,6 +149,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="创建基本架构&#10;GameJFrame 设置主界面&#10;LoginJframe 设置登录界面&#10;RegisterJFrame 设置注册界面&#10;他们全都继承自JFrame类，设置基本属性:宽高、标题、居中、置顶、关闭模式、显示界面&#10;App写main用于调用他们" />
     <MESSAGE value="初始化菜单同时封装之前初始化界面的代码为函数" />
-    <option name="LAST_COMMIT_MESSAGE" value="初始化菜单同时封装之前初始化界面的代码为函数" />
+    <MESSAGE value="initImage()初始化图片设置位置方法" />
+    <option name="LAST_COMMIT_MESSAGE" value="initImage()初始化图片设置位置方法" />
   </component>
 </project>

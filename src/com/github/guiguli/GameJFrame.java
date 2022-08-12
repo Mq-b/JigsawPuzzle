@@ -24,16 +24,16 @@ public class GameJFrame extends JFrame {
 
     //初始化图片
     private void initImage() {
-        //创建一个图片ImageIcon的对象
-        ImageIcon icon = new ImageIcon("image/animal/animal3/3.jpg");
-        //创建一个JLabel的对象(管理容器)
-        JLabel jLabel = new JLabel(icon);
-        //指定图片位置
-        jLabel.setBounds(0,0,105,105);
-
-        //把管理容器添加到界面中
-        //this.add(jLabel);
-        this.getContentPane().add(jLabel);
+        for(int i = 0,number=1; i < 4; i++) {
+            for (int j = 0; j < 4; j++,number++) {
+                //创建一个JLabel的对象(管理容器)
+                JLabel jLabel = new JLabel(new ImageIcon("image/animal/animal3/" + (number) + ".jpg"));
+                //指定图片位置
+                jLabel.setBounds(105 * j, i*105, 105, 105);
+                //把管理容器添加到界面中
+                this.getContentPane().add(jLabel);
+            }
+        }
     }
 
     //初始化菜单
