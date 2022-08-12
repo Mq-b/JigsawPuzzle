@@ -1,4 +1,4 @@
-import com.github.guiguli.GameJFrame;
+import com.github.ui.GameJFrame;
 
 public class App {
     public static void main(String[] args) {
