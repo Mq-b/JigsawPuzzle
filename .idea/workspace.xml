@@ -71,7 +71,7 @@
       <module name="JigsawPuzzle" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.github.ui.*" />
+          <option name="PATTERN" value="com.github.guiguli.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -95,7 +95,7 @@
       <option name="presentableId" value="Default" />
       <updated>1660295331419</updated>
       <workItem from="1660295333175" duration="8908000" />
-      <workItem from="1660308333559" duration="4635000" />
+      <workItem from="1660308333559" duration="5252000" />
     </task>
     <task id="LOCAL-00001" summary="创建基本架构&#10;GameJFrame 设置主界面&#10;LoginJframe 设置登录界面&#10;RegisterJFrame 设置注册界面&#10;他们全都继承自JFrame类，设置基本属性:宽高、标题、居中、置顶、关闭模式、显示界面&#10;App写main用于调用他们">
       <created>1660298911335</created>
@@ -132,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660312137654</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="更改包名">
+      <created>1660313106039</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1660313106039</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
