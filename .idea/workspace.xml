@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c75abb97-6630-44d2-bfab-38b161bd62fd" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/src/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/github/guiguli/GameJFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/github/guiguli/LoginJframe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/github/guiguli/RegisterJFrame.java" afterDir="false" />
+    <list default="true" id="c75abb97-6630-44d2-bfab-38b161bd62fd" name="变更" comment="创建基本架构&#10;GameJFrame 设置主界面&#10;LoginJframe 设置登录界面&#10;RegisterJFrame 设置注册界面&#10;他们全都继承自JFrame类，设置基本属性:宽高、标题、居中、置顶、关闭模式、显示界面&#10;App写main用于调用他们">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/guiguli/GameJFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/guiguli/GameJFrame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,8 +84,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1660295331419</updated>
-      <workItem from="1660295333175" duration="3282000" />
+      <workItem from="1660295333175" duration="6849000" />
     </task>
+    <task id="LOCAL-00001" summary="创建基本架构&#10;GameJFrame 设置主界面&#10;LoginJframe 设置登录界面&#10;RegisterJFrame 设置注册界面&#10;他们全都继承自JFrame类，设置基本属性:宽高、标题、居中、置顶、关闭模式、显示界面&#10;App写main用于调用他们">
+      <created>1660298911335</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1660298911335</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,10 +104,26 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="创建基本架构&#10;GameJFrame 设置主界面&#10;LoginJframe 设置登录界面&#10;RegisterJFrame 设置注册界面&#10;他们全都继承自JFrame类，设置基本属性:宽高、标题、居中、置顶、关闭模式、显示界面&#10;App写main用于调用他们" />
+    <option name="LAST_COMMIT_MESSAGE" value="创建基本架构&#10;GameJFrame 设置主界面&#10;LoginJframe 设置登录界面&#10;RegisterJFrame 设置注册界面&#10;他们全都继承自JFrame类，设置基本属性:宽高、标题、居中、置顶、关闭模式、显示界面&#10;App写main用于调用他们" />
   </component>
 </project>
