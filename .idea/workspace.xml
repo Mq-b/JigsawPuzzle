@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c75abb97-6630-44d2-bfab-38b161bd62fd" name="变更" comment="创建基本架构&#10;GameJFrame 设置主界面&#10;LoginJframe 设置登录界面&#10;RegisterJFrame 设置注册界面&#10;他们全都继承自JFrame类，设置基本属性:宽高、标题、居中、置顶、关闭模式、显示界面&#10;App写main用于调用他们">
+    <list default="true" id="c75abb97-6630-44d2-bfab-38b161bd62fd" name="变更" comment="初始化菜单同时封装之前初始化界面的代码为函数">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/github/guiguli/GameJFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/guiguli/GameJFrame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,10 +37,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "D:/ideaProject/JigsawPuzzle",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -48,6 +50,14 @@
     "nodejs_package_manager_path": "npm"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ideaProject\JigsawPuzzle" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ideaProject\JigsawPuzzle" />
+    </key>
+  </component>
   <component name="RunManager" selected="应用程序.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="App" />
@@ -84,7 +94,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1660295331419</updated>
-      <workItem from="1660295333175" duration="6849000" />
+      <workItem from="1660295333175" duration="8908000" />
+      <workItem from="1660308333559" duration="658000" />
     </task>
     <task id="LOCAL-00001" summary="创建基本架构&#10;GameJFrame 设置主界面&#10;LoginJframe 设置登录界面&#10;RegisterJFrame 设置注册界面&#10;他们全都继承自JFrame类，设置基本属性:宽高、标题、居中、置顶、关闭模式、显示界面&#10;App写main用于调用他们">
       <created>1660298911335</created>
@@ -93,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660298911335</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="初始化菜单同时封装之前初始化界面的代码为函数">
+      <created>1660306304194</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1660306304194</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +142,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="创建基本架构&#10;GameJFrame 设置主界面&#10;LoginJframe 设置登录界面&#10;RegisterJFrame 设置注册界面&#10;他们全都继承自JFrame类，设置基本属性:宽高、标题、居中、置顶、关闭模式、显示界面&#10;App写main用于调用他们" />
-    <option name="LAST_COMMIT_MESSAGE" value="创建基本架构&#10;GameJFrame 设置主界面&#10;LoginJframe 设置登录界面&#10;RegisterJFrame 设置注册界面&#10;他们全都继承自JFrame类，设置基本属性:宽高、标题、居中、置顶、关闭模式、显示界面&#10;App写main用于调用他们" />
+    <MESSAGE value="初始化菜单同时封装之前初始化界面的代码为函数" />
+    <option name="LAST_COMMIT_MESSAGE" value="初始化菜单同时封装之前初始化界面的代码为函数" />
   </component>
 </project>

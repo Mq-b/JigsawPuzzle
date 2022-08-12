@@ -15,10 +15,28 @@ public class GameJFrame extends JFrame {
         //初始化菜单
         initJMenuBar();
 
+        //初始化图片
+        initImage();
+
         //设置界面显示
         this.setVisible(true);
     }
 
+    //初始化图片
+    private void initImage() {
+        //创建一个图片ImageIcon的对象
+        ImageIcon icon = new ImageIcon("image/animal/animal3/3.jpg");
+        //创建一个JLabel的对象(管理容器)
+        JLabel jLabel = new JLabel(icon);
+        //指定图片位置
+        jLabel.setBounds(0,0,105,105);
+
+        //把管理容器添加到界面中
+        //this.add(jLabel);
+        this.getContentPane().add(jLabel);
+    }
+
+    //初始化菜单
     private void initJMenuBar() {
         //创建整个的菜单对象
         JMenuBar jMenuBar = new JMenuBar();
@@ -49,6 +67,7 @@ public class GameJFrame extends JFrame {
         this.setJMenuBar(jMenuBar);
     }
 
+    //初始化界面
     private void initJFram() {
         //设置界面宽高
         this.setSize(600,680);
@@ -64,5 +83,8 @@ public class GameJFrame extends JFrame {
 
         //设置关闭模式(参数是底层定义的常量)
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+
+        //取消默认的居中放置图片，只有取消了才会按照xy轴形式添加组件
+        this.setLayout(null);
     }
 }
