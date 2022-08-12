@@ -1,6 +1,7 @@
 package com.github.ui;
 
 import javax.swing.*;
+import java.util.Random;
 
 public class GameJFrame extends JFrame {
     //JFrame 界面 窗体
@@ -8,28 +9,60 @@ public class GameJFrame extends JFrame {
     //规定: GameJFrame这个界面表示的就是游戏的主界面
     //以后跟游戏相关的所有逻辑都写在这个类中
 
-    public GameJFrame(){
+    //创建一个二维数组
+    //目的: 用来管理数据
+    //加载图片的时候会根据二维数组加载
+    int[][] data = new int[4][4];
+
+    public GameJFrame() {
         //初始化界面
         initJFram();
+
+        //初始化数据(打乱)
+        initData();
 
         //初始化菜单
         initJMenuBar();
 
-        //初始化图片
+        //初始化图片(根据打乱之后的结果去加载图片)
         initImage();
 
         //设置界面显示
         this.setVisible(true);
     }
 
+    private void initData() {
+        //1.定义一个一维数组
+        int[] tempArr = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
+        //2.打乱数组中的数据的顺序
+        //遍历数组，得到每一个元素，拿着每一个元素跟随机索引上的数据进行交换
+        Random r = new Random();
+        for (int i = 0; i < tempArr.length; i++) {
+            //获取随机索引
+            int index = r.nextInt(tempArr.length);
+            //拿着遍历到的每一个数据 跟随机索引上的数据进行交换
+            var temp = tempArr[i];
+            tempArr[i] = tempArr[index];
+            tempArr[index] = temp;
+        }
+
+        //4.给二维数组添加数据
+        //遍历一维数组得到的每一个元素，把每一个元素依次添加到二维数组当中
+        for (int i = 0; i < tempArr.length; i++) {
+            data[i / 4][i % 4] = tempArr[i];
+        }
+
+    }
+
     //初始化图片
+    //初始化图片的时候就需要按照二维数组中管理的数据添加图片
     private void initImage() {
-        for(int i = 0,number=1; i < 4; i++) {
-            for (int j = 0; j < 4; j++,number++) {
+        for (int i = 0; i < 4; i++) {
+            for (int j = 0; j < 4; j++) {
                 //创建一个JLabel的对象(管理容器)
-                JLabel jLabel = new JLabel(new ImageIcon("image/animal/animal3/" + (number) + ".jpg"));
+                JLabel jLabel = new JLabel(new ImageIcon("image/animal/animal3/" + data[i][j] + ".jpg"));
                 //指定图片位置
-                jLabel.setBounds(105 * j, i*105, 105, 105);
+                jLabel.setBounds(105 * j, i * 105, 105, 105);
                 //把管理容器添加到界面中
                 this.getContentPane().add(jLabel);
             }
@@ -70,7 +103,7 @@ public class GameJFrame extends JFrame {
     //初始化界面
     private void initJFram() {
         //设置界面宽高
-        this.setSize(600,680);
+        this.setSize(600, 680);
 
         //设置界面标题
         this.setTitle("拼图单机版 v1.0");
