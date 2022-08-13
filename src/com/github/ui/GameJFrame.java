@@ -2,9 +2,11 @@ package com.github.ui;
 
 import javax.swing.*;
 import javax.swing.border.BevelBorder;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 import java.util.Random;
 
-public class GameJFrame extends JFrame {
+public class GameJFrame extends JFrame implements KeyListener {
     //JFrame 界面 窗体
     //子类? 也表示界面，窗体
     //规定: GameJFrame这个界面表示的就是游戏的主界面
@@ -14,6 +16,10 @@ public class GameJFrame extends JFrame {
     //目的: 用来管理数据
     //加载图片的时候会根据二维数组加载
     int[][] data = new int[4][4];
+
+    //记录空白方块在二维数组的位置
+    int x = 0;
+    int y = 0;
 
     public GameJFrame() {
         //初始化界面
@@ -50,7 +56,12 @@ public class GameJFrame extends JFrame {
         //4.给二维数组添加数据
         //遍历一维数组得到的每一个元素，把每一个元素依次添加到二维数组当中
         for (int i = 0; i < tempArr.length; i++) {
-            data[i / 4][i % 4] = tempArr[i];
+            if (tempArr[i] == 0) {
+                x = i / 4;
+                y = i % 4;
+            } else {
+                data[i / 4][i % 4] = tempArr[i];
+            }
         }
 
     }
@@ -58,6 +69,9 @@ public class GameJFrame extends JFrame {
     //初始化图片
     //初始化图片的时候就需要按照二维数组中管理的数据添加图片
     private void initImage() {
+        //清空原本已经出现的图片
+        this.getContentPane().removeAll();
+
         //先加载的图片会在上方，后加载的在下方，且背景图片更大，所以需要先添加拼图的图片然后添加背景图片
 
         for (int i = 0; i < 4; i++) {
@@ -75,9 +89,12 @@ public class GameJFrame extends JFrame {
 
         //添加背景图片
         JLabel backgroundLabel = new JLabel(new ImageIcon("image/background.png"));
-        backgroundLabel.setBounds(40,40,508,560);
+        backgroundLabel.setBounds(40, 40, 508, 560);
         //把背景图片添加到界面中
         this.getContentPane().add(backgroundLabel);
+
+        //刷新界面
+        this.getContentPane().repaint();
     }
 
     //初始化菜单
@@ -130,5 +147,66 @@ public class GameJFrame extends JFrame {
 
         //取消默认的居中放置图片，只有取消了才会按照xy轴形式添加组件
         this.setLayout(null);
+
+        //给整个界面添加键盘监听事件(参数为this表示触发后执行本类的代码)
+        this.addKeyListener(this);
+    }
+
+    @Override
+    public void keyTyped(KeyEvent e) {
+
+    }
+
+    @Override
+    public void keyPressed(KeyEvent e) {
+
+    }
+
+    @Override
+    public void keyReleased(KeyEvent e) {
+        //对上下左右进行判断
+        //左:37 上:38 右:39 下:40
+        //移动图片位置是相对于空白反馈上的数字的位置，如向下移动就是把空白方块上面的图片向下移动
+
+        int code = e.getKeyCode();
+        if (code == 37) {
+            if(y==3)
+                return;
+            System.out.println("向左移动");
+            data[x][y] = data[x][y + 1];
+            data[x][y + 1] = 0;
+            y++;
+            initImage();
+        } else if (code == 38) {
+            if(x==3){
+                //表示空白方块已经在最下面了，图片无法再移动,直接结束，不处理这个信号
+                return;
+            }
+            System.out.println("向上移动");
+            //更改二维数组然后调用initImage()是因为这个方法是根据二维数组来加载图片
+            data[x][y] = data[x + 1][y];
+            data[x + 1][y] = 0;
+            //x y记载着空白图片的位置，既然移动了空白图片的位置，那么也要重新记录x++
+            x++;
+            //调用方法重写加载图片
+            initImage();
+        } else if (code == 39) {
+            if(y==0)
+                return;
+            System.out.println("向右移动");
+            data[x][y] = data[x][y - 1];
+            data[x][y - 1] = 0;
+            y--;
+            initImage();
+        } else if (code == 40) {
+            if(x==0)
+                return;
+
+            System.out.println("向下移动");
+            data[x][y] = data[x - 1][y];
+            data[x - 1][y] = 0;
+            x--;
+            initImage();
+        }
     }
 }

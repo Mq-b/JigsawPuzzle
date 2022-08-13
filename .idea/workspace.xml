@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c75abb97-6630-44d2-bfab-38b161bd62fd" name="变更" comment="增加注释说明，鼠标事件，键盘事件，动作">
+    <list default="true" id="c75abb97-6630-44d2-bfab-38b161bd62fd" name="变更" comment="修改初始化图片方法initImage&#10;位置进行额外偏移，增加背景图片，增加图片边框">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/github/ui/GameJFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/ui/GameJFrame.java" afterDir="false" />
     </list>
@@ -211,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660355968738</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="修改初始化图片方法initImage&#10;位置进行额外偏移，增加背景图片，增加图片边框">
+      <created>1660357121890</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1660357121890</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,6 +257,7 @@
     <MESSAGE value="事件监听" />
     <MESSAGE value="事件监听测试" />
     <MESSAGE value="增加注释说明，鼠标事件，键盘事件，动作" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加注释说明，鼠标事件，键盘事件，动作" />
+    <MESSAGE value="修改初始化图片方法initImage&#10;位置进行额外偏移，增加背景图片，增加图片边框" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改初始化图片方法initImage&#10;位置进行额外偏移，增加背景图片，增加图片边框" />
   </component>
 </project>
