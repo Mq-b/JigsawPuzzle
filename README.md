@@ -1,8 +1,4 @@
-## 2022/8/12 17:21 create
-
-## Learn java in 7 dayss
-
-
+## 2022/8/12 17:21 create Learn java in 7 dayss
 
 ## 介绍:
 
@@ -16,4 +12,28 @@
 
 程序采用了java标准库的GUI，未使用任何框架，使用的都是java的基础语法
 
+## 下面展示成品
+
+### 启动的登录界面
+
 ![image](https://github.com/13870517674/JigsawPuzzle/blob/master/image/Snipaste_2022-08-13_21-38-34.png)
+
+### 输入完账号密码的界面
+
+![image](https://github.com/13870517674/JigsawPuzzle/blob/master/image/Snipaste_2022-08-13_21-39-41.png)
+
+### 进入游戏的界面
+
+![image](https://github.com/13870517674/JigsawPuzzle/blob/master/image/Snipaste_2022-08-13_21-40-18.png)
+
+### 菜单栏的按钮
+
+![image](https://github.com/13870517674/JigsawPuzzle/blob/master/image/Snipaste_2022-08-13_21-41-41.png)
+
+### 关于我们按钮下显示的
+
+![image](https://github.com/13870517674/JigsawPuzzle/blob/master/image/Snipaste_2022-08-13_21-41-10.png)
+
+### 游戏胜利
+
+![image](https://github.com/13870517674/JigsawPuzzle/blob/master/image/Snipaste_2022-08-13_21-42-03.png)
