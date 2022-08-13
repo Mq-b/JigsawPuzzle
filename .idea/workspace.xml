@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c75abb97-6630-44d2-bfab-38b161bd62fd" name="变更" comment="本类实现KeyListener接口，重写所有抽象方法&#10;给整个界面添加键盘监听事件&#10;统计空白方块对应数字0在二维数组中的位置&#10;在keyReleased方法中实现移动逻辑，它是“抬起”即键盘按钮释放&#10;处理数组越界导致的异常，增加if判断&#10;修改initImage()初始化图片函数，增加开始清空图片与最后刷新界面">
-      <change afterPath="$PROJECT_DIR$/src/com/github/test/TestFor.java" afterDir="false" />
+    <list default="true" id="c75abb97-6630-44d2-bfab-38b161bd62fd" name="变更" comment="增加方法判断游戏胜负，设置A W分别为显示正确与直接通关。&#10;创建新的成员变量等">
+      <change afterPath="$PROJECT_DIR$/src/com/github/test/TestRandom.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/github/ui/GameJFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/ui/GameJFrame.java" afterDir="false" />
     </list>
@@ -45,7 +45,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "D:/ideaProject/JigsawPuzzle/src/com/github/test",
+    "last_opened_file_path": "D:/ideaProject/JigsawPuzzle/image",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -55,6 +55,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ideaProject\JigsawPuzzle\image" />
       <recent name="D:\ideaProject\JigsawPuzzle\src\com\github\test" />
       <recent name="D:\ideaProject\JigsawPuzzle" />
     </key>
@@ -72,19 +73,6 @@
     </configuration>
     <configuration name="Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.github.test.Test1" />
-      <module name="JigsawPuzzle" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.github.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.github.test.Test3" />
       <module name="JigsawPuzzle" />
       <extension name="coverage">
         <pattern>
@@ -122,13 +110,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestRandom" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.github.test.TestRandom" />
+      <module name="JigsawPuzzle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="应用程序.App" />
+        <item itemvalue="应用程序.TestRandom" />
         <item itemvalue="应用程序.TestFor" />
         <item itemvalue="应用程序.Test1" />
         <item itemvalue="应用程序.Test4" />
-        <item itemvalue="应用程序.Test3" />
       </list>
     </recent_temporary>
   </component>
@@ -227,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660360054375</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="增加方法判断游戏胜负，设置A W分别为显示正确与直接通关。&#10;创建新的成员变量等">
+      <created>1660366407209</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1660366407209</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,6 +276,7 @@
     <MESSAGE value="增加注释说明，鼠标事件，键盘事件，动作" />
     <MESSAGE value="修改初始化图片方法initImage&#10;位置进行额外偏移，增加背景图片，增加图片边框" />
     <MESSAGE value="本类实现KeyListener接口，重写所有抽象方法&#10;给整个界面添加键盘监听事件&#10;统计空白方块对应数字0在二维数组中的位置&#10;在keyReleased方法中实现移动逻辑，它是“抬起”即键盘按钮释放&#10;处理数组越界导致的异常，增加if判断&#10;修改initImage()初始化图片函数，增加开始清空图片与最后刷新界面" />
-    <option name="LAST_COMMIT_MESSAGE" value="本类实现KeyListener接口，重写所有抽象方法&#10;给整个界面添加键盘监听事件&#10;统计空白方块对应数字0在二维数组中的位置&#10;在keyReleased方法中实现移动逻辑，它是“抬起”即键盘按钮释放&#10;处理数组越界导致的异常，增加if判断&#10;修改initImage()初始化图片函数，增加开始清空图片与最后刷新界面" />
+    <MESSAGE value="增加方法判断游戏胜负，设置A W分别为显示正确与直接通关。&#10;创建新的成员变量等" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加方法判断游戏胜负，设置A W分别为显示正确与直接通关。&#10;创建新的成员变量等" />
   </component>
 </project>
