@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c75abb97-6630-44d2-bfab-38b161bd62fd" name="变更" comment="更改包名">
+    <list default="true" id="c75abb97-6630-44d2-bfab-38b161bd62fd" name="变更" comment="打乱图片，创建data二维数组成员，&#10;打乱数据方法:initData()&#10;让初始化图片方法initImage()使用经过initData()打乱后的成员data，这里用到了Random随机">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/github/ui/GameJFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/ui/GameJFrame.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +59,7 @@
       <recent name="D:\ideaProject\JigsawPuzzle" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.App">
+  <component name="RunManager" selected="应用程序.Test4">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="App" />
       <module name="JigsawPuzzle" />
@@ -81,8 +80,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.github.test.Test4" />
+      <module name="JigsawPuzzle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.Test4" />
         <item itemvalue="应用程序.App" />
       </list>
     </recent_temporary>
@@ -147,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660314403820</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="打乱图片，创建data二维数组成员，&#10;打乱数据方法:initData()&#10;让初始化图片方法initImage()使用经过initData()打乱后的成员data，这里用到了Random随机">
+      <created>1660316216357</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1660316216357</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,6 +202,7 @@
     <MESSAGE value="initImage()初始化图片设置位置方法" />
     <MESSAGE value="优化了initImage()加载图片，嵌套循环拼接路径" />
     <MESSAGE value="更改包名" />
-    <option name="LAST_COMMIT_MESSAGE" value="更改包名" />
+    <MESSAGE value="打乱图片，创建data二维数组成员，&#10;打乱数据方法:initData()&#10;让初始化图片方法initImage()使用经过initData()打乱后的成员data，这里用到了Random随机" />
+    <option name="LAST_COMMIT_MESSAGE" value="打乱图片，创建data二维数组成员，&#10;打乱数据方法:initData()&#10;让初始化图片方法initImage()使用经过initData()打乱后的成员data，这里用到了Random随机" />
   </component>
 </project>
