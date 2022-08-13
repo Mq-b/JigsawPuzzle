@@ -1,6 +1,7 @@
 package com.github.ui;
 
 import javax.swing.*;
+import javax.swing.border.BevelBorder;
 import java.util.Random;
 
 public class GameJFrame extends JFrame {
@@ -18,11 +19,11 @@ public class GameJFrame extends JFrame {
         //初始化界面
         initJFram();
 
-        //初始化数据(打乱)
-        initData();
-
         //初始化菜单
         initJMenuBar();
+
+        //初始化数据(打乱)
+        initData();
 
         //初始化图片(根据打乱之后的结果去加载图片)
         initImage();
@@ -57,16 +58,26 @@ public class GameJFrame extends JFrame {
     //初始化图片
     //初始化图片的时候就需要按照二维数组中管理的数据添加图片
     private void initImage() {
+        //先加载的图片会在上方，后加载的在下方，且背景图片更大，所以需要先添加拼图的图片然后添加背景图片
+
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 4; j++) {
                 //创建一个JLabel的对象(管理容器)
                 JLabel jLabel = new JLabel(new ImageIcon("image/animal/animal3/" + data[i][j] + ".jpg"));
                 //指定图片位置
-                jLabel.setBounds(105 * j, i * 105, 105, 105);
+                jLabel.setBounds(105 * j + 83, i * 105 + 134, 105, 105);
+                //给图片添加边框(选择已有样式)我们使用的是斜面边框(0表示凸起，1则是凹下，可以使用定义好的常量)
+                jLabel.setBorder(new BevelBorder(BevelBorder.RAISED));
                 //把管理容器添加到界面中
                 this.getContentPane().add(jLabel);
             }
         }
+
+        //添加背景图片
+        JLabel backgroundLabel = new JLabel(new ImageIcon("image/background.png"));
+        backgroundLabel.setBounds(40,40,508,560);
+        //把背景图片添加到界面中
+        this.getContentPane().add(backgroundLabel);
     }
 
     //初始化菜单
