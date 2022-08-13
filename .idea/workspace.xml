@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c75abb97-6630-44d2-bfab-38b161bd62fd" name="变更" comment="增加方法判断游戏胜负，设置A W分别为显示正确与直接通关。&#10;创建新的成员变量等">
-      <change afterPath="$PROJECT_DIR$/src/com/github/test/TestRandom.java" afterDir="false" />
+    <list default="true" id="c75abb97-6630-44d2-bfab-38b161bd62fd" name="变更" comment="修改较多，图片切换完成，绑定事件，菜单等等">
+      <change afterPath="$PROJECT_DIR$/src/com/github/util/CodeUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/github/ui/GameJFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/ui/GameJFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/ui/LoginJframe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/ui/LoginJframe.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -235,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660366407209</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="修改较多，图片切换完成，绑定事件，菜单等等">
+      <created>1660382803547</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1660382803547</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,6 +285,7 @@
     <MESSAGE value="修改初始化图片方法initImage&#10;位置进行额外偏移，增加背景图片，增加图片边框" />
     <MESSAGE value="本类实现KeyListener接口，重写所有抽象方法&#10;给整个界面添加键盘监听事件&#10;统计空白方块对应数字0在二维数组中的位置&#10;在keyReleased方法中实现移动逻辑，它是“抬起”即键盘按钮释放&#10;处理数组越界导致的异常，增加if判断&#10;修改initImage()初始化图片函数，增加开始清空图片与最后刷新界面" />
     <MESSAGE value="增加方法判断游戏胜负，设置A W分别为显示正确与直接通关。&#10;创建新的成员变量等" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加方法判断游戏胜负，设置A W分别为显示正确与直接通关。&#10;创建新的成员变量等" />
+    <MESSAGE value="修改较多，图片切换完成，绑定事件，菜单等等" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改较多，图片切换完成，绑定事件，菜单等等" />
   </component>
 </project>
