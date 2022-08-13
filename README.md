@@ -1,4 +1,4 @@
-## 2022/8/12 17:21 create Learn java in 7 dayss
+# Learning 7 days java started writing this project at 2022/8/12 17:21
 
 ## 介绍:
 
