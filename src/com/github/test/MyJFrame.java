@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Random;
-
+//继承JFrame 实现ActionListener接口，动作监听(按钮点击后执行的动作)
 public class MyJFrame extends JFrame implements ActionListener {
 
     //创建一个按钮对象
@@ -35,7 +35,7 @@ public class MyJFrame extends JFrame implements ActionListener {
 
         //给按钮设置位置和宽高
         jtb2.setBounds(100,0,100,50);
-        jtb2.addActionListener(this);
+        jtb2.addActionListener(this);           //设置执行的类对象
 
 
         //那按钮添加到整个界面当中

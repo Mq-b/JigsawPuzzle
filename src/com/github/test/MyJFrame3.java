@@ -6,7 +6,7 @@ import java.awt.event.KeyListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.security.Key;
-
+//继承extends然后实现KeyListener接口的方法，键盘事件
 public class MyJFrame3 extends JFrame implements KeyListener {
 
     public MyJFrame3(){

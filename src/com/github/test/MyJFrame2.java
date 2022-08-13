@@ -6,7 +6,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.util.Random;
-
+//创建按钮对象 继承JFrame实现MouseListener接口，鼠标事件
 public class MyJFrame2 extends JFrame implements MouseListener {
 
     //创建一个按钮对象

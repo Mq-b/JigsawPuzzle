@@ -31,7 +31,7 @@ public class Test3 {
         //参数：表示事件被触发之后要执行的代码
         //jtb.addActionListener(new MyActionListener());
 
-        jtb.addActionListener(new ActionListener() {
+        jtb.addActionListener(new ActionListener() {    //绑定事件，这里使用匿名局部类的方式创建对象添加
             @Override
             public void actionPerformed(ActionEvent e) {
                 System.out.println("达咩~不要点我哟~");
