@@ -21,6 +21,17 @@ public class GameJFrame extends JFrame implements KeyListener {
     int x = 0;
     int y = 0;
 
+    //定义一个变量，记录当前展示图片的路径
+    String path = "image/girl/girl3/";
+
+    //定义一个二维数组，存储正确的数据
+    int[][] wim = {
+            {1, 2, 3, 4,},
+            {5, 6, 7, 8},
+            {9, 10, 11, 12},
+            {13, 14, 15, 0}
+    };
+
     public GameJFrame() {
         //初始化界面
         initJFram();
@@ -72,12 +83,18 @@ public class GameJFrame extends JFrame implements KeyListener {
         //清空原本已经出现的图片
         this.getContentPane().removeAll();
 
-        //先加载的图片会在上方，后加载的在下方，且背景图片更大，所以需要先添加拼图的图片然后添加背景图片
+        if(victorty()){
+            //显示胜利的图标
+            JLabel winJlabel = new JLabel(new ImageIcon(("image/win.png")));
+            winJlabel.setBounds(203,283,197,73);
+            this.getContentPane().add(winJlabel);
+        }
 
+        //先加载的图片会在上方，后加载的在下方，且背景图片更大，所以需要先添加拼图的图片然后添加背景图片
         for (int i = 0; i < 4; i++) {
             for (int j = 0; j < 4; j++) {
                 //创建一个JLabel的对象(管理容器)
-                JLabel jLabel = new JLabel(new ImageIcon("image/animal/animal3/" + data[i][j] + ".jpg"));
+                JLabel jLabel = new JLabel(new ImageIcon(path + data[i][j] + ".jpg"));
                 //指定图片位置
                 jLabel.setBounds(105 * j + 83, i * 105 + 134, 105, 105);
                 //给图片添加边框(选择已有样式)我们使用的是斜面边框(0表示凸起，1则是凹下，可以使用定义好的常量)
@@ -157,20 +174,41 @@ public class GameJFrame extends JFrame implements KeyListener {
 
     }
 
+    //键盘按键按下不松时调用
     @Override
     public void keyPressed(KeyEvent e) {
-
+        int code = e.getKeyCode();
+        if (code == 65) {
+            //把界面中所有的图片全部删除
+            this.getContentPane().removeAll();
+            //加载第一张完全的图片
+            JLabel all = new JLabel(new ImageIcon(path + "all.jpg"));
+            all.setBounds(83, 134, 420, 420);
+            this.getContentPane().add(all);
+            //加载背景图片
+            JLabel backgroundLabel = new JLabel(new ImageIcon("image/background.png"));
+            backgroundLabel.setBounds(40, 40, 508, 560);
+            this.getContentPane().add(backgroundLabel);
+            //刷新界面
+            this.getContentPane().repaint();
+        }
     }
 
+    //键盘按键按下松开时调用
     @Override
     public void keyReleased(KeyEvent e) {
+        //判断游戏是否胜利，如果胜利，此方法需要直接结束，不能再执行下面移动的代码了
+        if(victorty()){
+            return;
+        }
+
         //对上下左右进行判断
         //左:37 上:38 右:39 下:40
         //移动图片位置是相对于空白反馈上的数字的位置，如向下移动就是把空白方块上面的图片向下移动
 
         int code = e.getKeyCode();
         if (code == 37) {
-            if(y==3)
+            if (y == 3)
                 return;
             System.out.println("向左移动");
             data[x][y] = data[x][y + 1];
@@ -178,7 +216,7 @@ public class GameJFrame extends JFrame implements KeyListener {
             y++;
             initImage();
         } else if (code == 38) {
-            if(x==3){
+            if (x == 3) {
                 //表示空白方块已经在最下面了，图片无法再移动,直接结束，不处理这个信号
                 return;
             }
@@ -191,7 +229,7 @@ public class GameJFrame extends JFrame implements KeyListener {
             //调用方法重写加载图片
             initImage();
         } else if (code == 39) {
-            if(y==0)
+            if (y == 0)
                 return;
             System.out.println("向右移动");
             data[x][y] = data[x][y - 1];
@@ -199,14 +237,36 @@ public class GameJFrame extends JFrame implements KeyListener {
             y--;
             initImage();
         } else if (code == 40) {
-            if(x==0)
+            if (x == 0)
                 return;
-
             System.out.println("向下移动");
             data[x][y] = data[x - 1][y];
             data[x - 1][y] = 0;
             x--;
             initImage();
+        } else if (code == 65) {
+            //A松开重新加载图片
+            initImage();
+        } else if (code == 87) {
+            //W直接通关
+            data = new int[][]{
+                    {1, 2, 3, 4,},
+                    {5, 6, 7, 8},
+                    {9, 10, 11, 12},
+                    {13, 14, 15, 0}
+            };
+            initImage();
         }
     }
+
+    //判断data数组中的数据是否和win数组中的相同
+    public boolean victorty(){
+        for(int i=0;i<data.length;i++){
+            for(int j=0;j<data[i].length;j++){
+                if(data[i][j]!=wim[i][j])
+                    return false;
+            }
+        }
+        return true;
+    };
 }

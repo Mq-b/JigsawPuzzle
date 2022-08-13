@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c75abb97-6630-44d2-bfab-38b161bd62fd" name="变更" comment="修改初始化图片方法initImage&#10;位置进行额外偏移，增加背景图片，增加图片边框">
+    <list default="true" id="c75abb97-6630-44d2-bfab-38b161bd62fd" name="变更" comment="本类实现KeyListener接口，重写所有抽象方法&#10;给整个界面添加键盘监听事件&#10;统计空白方块对应数字0在二维数组中的位置&#10;在keyReleased方法中实现移动逻辑，它是“抬起”即键盘按钮释放&#10;处理数组越界导致的异常，增加if判断&#10;修改initImage()初始化图片函数，增加开始清空图片与最后刷新界面">
+      <change afterPath="$PROJECT_DIR$/src/com/github/test/TestFor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/github/ui/GameJFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/ui/GameJFrame.java" afterDir="false" />
     </list>
@@ -69,19 +70,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.github.guiguli.Test" />
-      <module name="JigsawPuzzle" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.github.guiguli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.github.test.Test1" />
       <module name="JigsawPuzzle" />
@@ -121,9 +109,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestFor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.github.test.TestFor" />
+      <module name="JigsawPuzzle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="应用程序.App" />
+        <item itemvalue="应用程序.TestFor" />
         <item itemvalue="应用程序.Test1" />
         <item itemvalue="应用程序.Test4" />
         <item itemvalue="应用程序.Test3" />
@@ -218,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660357121890</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="本类实现KeyListener接口，重写所有抽象方法&#10;给整个界面添加键盘监听事件&#10;统计空白方块对应数字0在二维数组中的位置&#10;在keyReleased方法中实现移动逻辑，它是“抬起”即键盘按钮释放&#10;处理数组越界导致的异常，增加if判断&#10;修改initImage()初始化图片函数，增加开始清空图片与最后刷新界面">
+      <created>1660360054375</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1660360054375</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,6 +267,7 @@
     <MESSAGE value="事件监听测试" />
     <MESSAGE value="增加注释说明，鼠标事件，键盘事件，动作" />
     <MESSAGE value="修改初始化图片方法initImage&#10;位置进行额外偏移，增加背景图片，增加图片边框" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改初始化图片方法initImage&#10;位置进行额外偏移，增加背景图片，增加图片边框" />
+    <MESSAGE value="本类实现KeyListener接口，重写所有抽象方法&#10;给整个界面添加键盘监听事件&#10;统计空白方块对应数字0在二维数组中的位置&#10;在keyReleased方法中实现移动逻辑，它是“抬起”即键盘按钮释放&#10;处理数组越界导致的异常，增加if判断&#10;修改initImage()初始化图片函数，增加开始清空图片与最后刷新界面" />
+    <option name="LAST_COMMIT_MESSAGE" value="本类实现KeyListener接口，重写所有抽象方法&#10;给整个界面添加键盘监听事件&#10;统计空白方块对应数字0在二维数组中的位置&#10;在keyReleased方法中实现移动逻辑，它是“抬起”即键盘按钮释放&#10;处理数组越界导致的异常，增加if判断&#10;修改initImage()初始化图片函数，增加开始清空图片与最后刷新界面" />
   </component>
 </project>
