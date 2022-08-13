@@ -16,4 +16,4 @@
 
 程序采用了java标准库的GUI，未使用任何框架，使用的都是java的基础语法
 
-https://github.com//JigsawPuzzle/raw/master/image/Snipaste_2022-08-13_21-38-34.png
+![image](https://github.com/13870517674/JigsawPuzzle/blob/master/image/Snipaste_2022-08-13_21-38-34.png)
